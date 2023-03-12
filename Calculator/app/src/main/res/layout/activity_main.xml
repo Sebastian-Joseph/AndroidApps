@@ -10,31 +10,35 @@
     tools:context=".MainActivity">
 
     <!-- Calculator display -->
+
     <TextView
-        android:id="@+id/calculator_display"
-        android:layout_width="395dp"
-        android:layout_height="187dp"
-        android:layout_margin="8dp"
+        android:id="@+id/display"
+        android:layout_width="382dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
         android:gravity="end"
+        android:hint="Enter your equation"
         android:padding="8dp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:textColorHint="@android:color/black" />
 
     <LinearLayout
         android:id="@+id/firstLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/secondLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calculator_display"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <!-- Number and operation buttons -->
 
@@ -220,7 +224,7 @@
         android:id="@+id/fifthLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
