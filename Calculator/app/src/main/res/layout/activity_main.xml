@@ -24,23 +24,27 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintVertical_bias="0.016"
         tools:textColorHint="@android:color/black" />
+
+    <!-- Number and operation buttons -->
+
 
     <LinearLayout
         android:id="@+id/firstLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/secondLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display">
 
-        <!-- Number and operation buttons -->
 
         <Button
             android:id="@+id/clear"
@@ -83,7 +87,7 @@
         android:id="@+id/secondLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="40dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/thirdLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +134,7 @@
         android:id="@+id/thirdLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/fourthLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -177,7 +181,7 @@
         android:id="@+id/fourthLayout"
         android:layout_width="393dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/fifthLayout"
         app:layout_constraintEnd_toEndOf="parent"
